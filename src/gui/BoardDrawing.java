@@ -1,7 +1,11 @@
+package gui;
+
 import java.awt.*;
 import java.awt.geom.*;
 import java.util.ArrayList;
 import javax.swing.*;
+
+import game.GameState;
 
 public class BoardDrawing extends JComponent{
 	private GameState state;
