@@ -7,9 +7,26 @@ package game;
  */
 public enum CheckerType {
     /** Player 1's color */
-    RED,
+    RED {
+        @Override
+        CheckerType getOpposite() {
+            return CheckerType.YELLOW;
+        }
+    },
     /** Player 2's color */
-    YELLOW,
+    YELLOW {
+        @Override
+        CheckerType getOpposite() {
+            return CheckerType.RED;
+        }
+    },
     /** No checker exists in this slot */
-    EMPTY
+    EMPTY {
+        @Override
+        CheckerType getOpposite() {
+            return null;
+        }
+    };
+
+    abstract CheckerType getOpposite();
 };

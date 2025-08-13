@@ -7,7 +7,7 @@ import game.CheckerNode;
  * The AIStrategy is meant to define the reasoning and overall strategy employed
  * by a non-human player.
  */
-interface AIStrategy {
+public interface AIStrategy {
     /** 
      * Returns a numerical value representative of how worthwhile it would be to
      * place a checker at the current location. This should check in all cardinal
